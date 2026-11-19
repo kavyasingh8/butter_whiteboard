@@ -1,0 +1,28 @@
+{
+  "name": "butter_whiteboard-web",
+  "private": true,
+  "type": "module",
+  "version": "1.0.0",
+  "scripts": {
+    "dev": "vite --port=3000 --host=0.0.0.0",
+    "start:game": "vite build --watch",
+    "build": "tsc && vite build"
+  },
+  "dependencies": {
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "autoprefixer": "^10.4.21",
+    "postcss": "^8.4.38",
+    "tailwindcss": "^3.4.3",
+    "typescript": "^5.2.2",
+    "vite": "^5.0.0"
+  },
+  "overrides": {
+    "rollup": "4.64.0"
+  }
+}

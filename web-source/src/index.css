@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,
+body,
+#root {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+  background: transparent;
+  user-select: none;
+}
+
+/* Lists still scroll with the wheel, the bar is just not drawn. */
+* {
+  scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+/* Brushed aluminium frame, like a real whiteboard. */
+.board-frame {
+  background: linear-gradient(180deg, #e3e6ea 0%, #b9bfc7 48%, #cfd3d9 100%);
+  box-shadow:
+    0 24px 60px -18px rgba(0, 0, 0, 0.7),
+    inset 0 1px 0 rgba(255, 255, 255, 0.7),
+    inset 0 -1px 0 rgba(0, 0, 0, 0.25);
+}
+
+.animate-fade-in {
+  animation: fade-in 120ms ease-out;
+}
+
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+}
+
+/* Stand-in for the game world when previewing in a browser. */
+.dev-backdrop {
+  background: radial-gradient(circle at 30% 20%, #3b4252, #1a1d24 70%);
+}
+
+input[type='range'] {
+  height: 4px;
+}
