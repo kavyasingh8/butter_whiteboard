@@ -4,7 +4,7 @@ lua54 'yes'
 
 author 'ButterChilly'
 description 'butter_whiteboard - Multiplayer whiteboards with live drawing, shapes, images and an admin panel'
-version '2.0.0'
+version '1.0.0'
 repository 'https://github.com/kavyasingh8/butter_whiteboard'
 
 ui_page 'web/index.html'
